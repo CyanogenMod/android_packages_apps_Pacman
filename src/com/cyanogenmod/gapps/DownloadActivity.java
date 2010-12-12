@@ -100,6 +100,8 @@ public class DownloadActivity extends Activity {
                 if (mYoutube.isChecked()) {
                     startActivity(getIntent(Constants.PNAME_YOUTUBE));
                 }
+                
+                finish();
             }
         });
         mCancelButton = (Button) findViewById(R.id.main_btn_cancel);
