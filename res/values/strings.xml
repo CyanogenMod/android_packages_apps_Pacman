@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CM Gapps</string>
-    <string name="activity_title">Choose the apps to install</string>
-    
-    <!-- App Names -->
-    	<string name="gmail">Gmail</string>
-    	<string name="chrometophone">Google Chrome to Phone</string>
-    	<string name="googlegoggles">Google Goggles</string>
-    	<string name="googlemaps">Google Maps</string>
-    	<string name="googlesearch">Google Search</string>
-    	<string name="googlevoice">Google Voice</string>
-    	<string name="streetview">Street View on Google Maps</string>
-    	<string name="voicesearch">Voice Search</string>
-    	<string name="youtube">Youtube</string>
-    	
-    <!-- Buttons -->
-    	<string name="main_btn_ok">OK</string>
-    	<string name="main_btn_cancel">Cancel</string>
+	<string name="app_name">CM Gapps</string>
+	<string name="activity_title">Choose the apps to install</string>
+
+	<!-- App Names -->
+	<string name="gmail">Gmail</string>
+	<string name="chrometophone">Google Chrome to Phone</string>
+	<string name="googlegoggles">Google Goggles</string>
+	<string name="googlemaps">Google Maps</string>
+	<string name="googlesearch">Google Search</string>
+	<string name="googlevoice">Google Voice</string>
+	<string name="streetview">Street View on Google Maps</string>
+	<string name="voicesearch">Voice Search</string>
+	<string name="youtube">Youtube</string>
+
+	<!-- Buttons -->
+	<string name="main_btn_ok">OK</string>
+	<string name="main_btn_cancel">Cancel</string>
 </resources>

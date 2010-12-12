@@ -12,7 +12,7 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 
 public class DownloadActivity extends Activity {
-	
+
 	private String[] mApps;
 	private CheckBox mGmail;
 	private CheckBox mChromeToPhone;
@@ -23,20 +23,20 @@ public class DownloadActivity extends Activity {
 	private CheckBox mStreetView;
 	private CheckBox mVoiceSearch;
 	private CheckBox mYoutube;
-	
+
 	private Button mOkButton;
 	private Button mCancelButton;
-	
+
 	@Override
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		setTitle(R.string.activity_title);
-		
-//		Set the length of the array to the number of checkboxes initialized;
+
+		//		Set the length of the array to the number of checkboxes initialized;
 		mApps = new String[8];
-		
+
 		mGmail = (CheckBox) findViewById(R.id.gmail);
 		mChromeToPhone = (CheckBox) findViewById(R.id.chrometophone);
 		mGoogleGoggles = (CheckBox) findViewById(R.id.googlegoggles);
@@ -46,10 +46,10 @@ public class DownloadActivity extends Activity {
 		mStreetView = (CheckBox) findViewById(R.id.streetview);
 		mVoiceSearch = (CheckBox) findViewById(R.id.voicesearch);
 		mYoutube = (CheckBox) findViewById(R.id.youtube);
-		
+
 		mOkButton = (Button) findViewById(R.id.main_btn_ok);
 		mCancelButton = (Button) findViewById(R.id.main_btn_cancel);
-		
+
 		mGmail.setOnCheckedChangeListener(new OnCheckedChangeListener(){
 			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked){
 				if(isChecked){
@@ -131,7 +131,7 @@ public class DownloadActivity extends Activity {
 				}
 			}
 		});
-		
+
 		mOkButton = (Button) findViewById(R.id.main_btn_ok);
 		mOkButton.setOnClickListener(new OnClickListener(){
 			public void onClick(View arg0){
