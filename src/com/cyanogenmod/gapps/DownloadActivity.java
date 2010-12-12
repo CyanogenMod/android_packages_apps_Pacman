@@ -35,7 +35,7 @@ public class DownloadActivity extends Activity {
         setTitle(R.string.activity_title);
 
         //		Set the length of the array to the number of checkboxes initialized;
-        mApps = new String[8];
+        mApps = new String[9];
 
         mGmail = (CheckBox) findViewById(R.id.gmail);
         mChromeToPhone = (CheckBox) findViewById(R.id.chrometophone);
