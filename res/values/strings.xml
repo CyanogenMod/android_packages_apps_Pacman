@@ -4,6 +4,7 @@
 	<string name="activity_title">Choose the apps to install</string>
 
 	<!-- App Names -->
+	<string name="facebook">Facebook</string>
 	<string name="gmail">Gmail</string>
 	<string name="chrometophone">Google Chrome to Phone</string>
 	<string name="googlegoggles">Google Goggles</string>
@@ -14,6 +15,7 @@
 	<string name="soundback">Soundback</string>
 	<string name="streetview">Street View on Google Maps</string>
 	<string name="talkback">Talkback</string>
+	<string name="twitter">Twitter</string>
 	<string name="voicesearch">Voice Search</string>
 	<string name="youtube">Youtube</string>
 

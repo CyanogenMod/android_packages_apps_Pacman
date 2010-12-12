@@ -13,4 +13,6 @@ public class Constants {
     public static final String PNAME_KICKBACK = "com.google.android.marvin.kickback";
     public static final String PNAME_SOUNDBACK = "com.google.android.marvin.soundback";
     public static final String PNAME_TALKBACK = "com.google.android.marvin.talkback";
+    public static final String PNAME_FACEBOOK = "com.facebook.katana";
+    public static final String PNAME_TWITTER = "com.twitter.android";
 }

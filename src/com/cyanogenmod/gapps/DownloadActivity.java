@@ -18,6 +18,7 @@ public class DownloadActivity extends Activity {
     private PackageManager mPM;
     private CheckBox mGmail;
     private CheckBox mChromeToPhone;
+    private CheckBox mFacebook;
     private CheckBox mGoogleGoggles;
     private CheckBox mGoogleMaps;
     private CheckBox mGoogleSearch;
@@ -26,6 +27,7 @@ public class DownloadActivity extends Activity {
     private CheckBox mSoundback;
     private CheckBox mStreetView;
     private CheckBox mTalkback;
+    private CheckBox mTwitter;
     private CheckBox mVoiceSearch;
     private CheckBox mYoutube;
 
@@ -44,6 +46,7 @@ public class DownloadActivity extends Activity {
 
         mGmail = (CheckBox) findViewById(R.id.gmail);
         mChromeToPhone = (CheckBox) findViewById(R.id.chrometophone);
+        mFacebook = (CheckBox) findViewById(R.id.facebook);
         mGoogleGoggles = (CheckBox) findViewById(R.id.googlegoggles);
         mGoogleMaps = (CheckBox) findViewById(R.id.googlemaps);
         mGoogleSearch = (CheckBox) findViewById(R.id.googlesearch);
@@ -52,6 +55,7 @@ public class DownloadActivity extends Activity {
         mSoundback= (CheckBox) findViewById(R.id.soundback);
         mStreetView = (CheckBox) findViewById(R.id.streetview);
         mTalkback= (CheckBox) findViewById(R.id.talkback);
+        mTwitter= (CheckBox) findViewById(R.id.twitter);
         mVoiceSearch = (CheckBox) findViewById(R.id.voicesearch);
         mYoutube = (CheckBox) findViewById(R.id.youtube);
 
@@ -72,6 +76,11 @@ public class DownloadActivity extends Activity {
                 /* Chrome to Phone */
                 if (mChromeToPhone.isChecked()) {
                     startActivity(getIntent(Constants.PNAME_CHROME));
+                }
+
+                /* Facebook */
+                if (mFacebook.isChecked()) {
+                    startActivity(getIntent(Constants.PNAME_FACEBOOK));
                 }
 
                 /* Google Goggles */
@@ -114,6 +123,11 @@ public class DownloadActivity extends Activity {
                     startActivity(getIntent(Constants.PNAME_TALKBACK));
                 }
 
+                /* Twitter */
+                if (mTalkback.isChecked()) {
+                    startActivity(getIntent(Constants.PNAME_TWITTER));
+                }
+
                 /* Voice Search */
                 if (mVoiceSearch.isChecked()) {
                     startActivity(getIntent(Constants.PNAME_VOICESEARCH));
@@ -134,6 +148,8 @@ public class DownloadActivity extends Activity {
                     mGmail.setChecked(true);
                 if(!mChromeToPhone.isChecked() && mChromeToPhone.isEnabled())
                     mChromeToPhone.setChecked(true);
+                if(!mFacebook.isChecked() && mFacebook.isEnabled())
+                    mFacebook.setChecked(true);
                 if(!mGoogleGoggles.isChecked() && mGoogleGoggles.isEnabled())
                     mGoogleGoggles.setChecked(true);
                 if(!mGoogleMaps.isChecked() && mGoogleMaps.isEnabled())
@@ -150,6 +166,8 @@ public class DownloadActivity extends Activity {
                     mStreetView.setChecked(true);
                 if(!mTalkback.isChecked() && mTalkback.isEnabled())
                     mTalkback.setChecked(true);
+                if(!mTwitter.isChecked() && mTwitter.isEnabled())
+                    mTwitter.setChecked(true);
                 if(!mVoiceSearch.isChecked() && mVoiceSearch.isEnabled())
                     mVoiceSearch.setChecked(true);
                 if(!mYoutube.isChecked() && mYoutube.isEnabled())
@@ -195,6 +213,9 @@ public class DownloadActivity extends Activity {
         /* Chrome to Phone */
         mChromeToPhone.setEnabled(!isInstalled(Constants.PNAME_CHROME));
 
+        /* Facebook */
+        mFacebook.setEnabled(!isInstalled(Constants.PNAME_FACEBOOK));
+
         /* Google Goggles */
         mGoogleGoggles.setEnabled(!isInstalled(Constants.PNAME_GOGGLES));
 
@@ -218,6 +239,9 @@ public class DownloadActivity extends Activity {
 
         /* Talkback */
         mTalkback.setEnabled(!isInstalled(Constants.PNAME_TALKBACK));
+
+        /* Twitter */
+        mTwitter.setEnabled(!isInstalled(Constants.PNAME_TWITTER));
 
         /* Voice Search */
         mVoiceSearch.setEnabled(!isInstalled(Constants.PNAME_VOICESEARCH));
