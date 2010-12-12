@@ -10,4 +10,7 @@ public class Constants {
     public static final String PNAME_STREETVIEW = "com.google.android.street";
     public static final String PNAME_VOICESEARCH = "com.google.android.voicesearch";
     public static final String PNAME_YOUTUBE = "com.google.android.youtube";
+    public static final String PNAME_KICKBACK = "com.google.android.marvin.kickback";
+    public static final String PNAME_SOUNDBACK = "com.google.android.marvin.soundback";
+    public static final String PNAME_TALKBACK = "com.google.android.marvin.talkback";
 }

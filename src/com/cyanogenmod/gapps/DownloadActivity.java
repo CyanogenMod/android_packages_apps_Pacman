@@ -22,11 +22,15 @@ public class DownloadActivity extends Activity {
     private CheckBox mGoogleMaps;
     private CheckBox mGoogleSearch;
     private CheckBox mGoogleVoice;
+    private CheckBox mKickback;
+    private CheckBox mSoundback;
     private CheckBox mStreetView;
+    private CheckBox mTalkback;
     private CheckBox mVoiceSearch;
     private CheckBox mYoutube;
 
     private Button mOkButton;
+    private Button mSelectAll;
     private Button mCancelButton;
 
     @Override
@@ -44,13 +48,17 @@ public class DownloadActivity extends Activity {
         mGoogleMaps = (CheckBox) findViewById(R.id.googlemaps);
         mGoogleSearch = (CheckBox) findViewById(R.id.googlesearch);
         mGoogleVoice = (CheckBox) findViewById(R.id.googlevoice);
+        mKickback= (CheckBox) findViewById(R.id.kickback);
+        mSoundback= (CheckBox) findViewById(R.id.soundback);
         mStreetView = (CheckBox) findViewById(R.id.streetview);
+        mTalkback= (CheckBox) findViewById(R.id.talkback);
         mVoiceSearch = (CheckBox) findViewById(R.id.voicesearch);
         mYoutube = (CheckBox) findViewById(R.id.youtube);
 
         disableInstalled();
 
         mOkButton = (Button) findViewById(R.id.main_btn_ok);
+        mSelectAll = (Button) findViewById(R.id.main_btn_selectall);
         mCancelButton = (Button) findViewById(R.id.main_btn_cancel);
 
         mOkButton = (Button) findViewById(R.id.main_btn_ok);
@@ -86,9 +94,24 @@ public class DownloadActivity extends Activity {
                     startActivity(getIntent(Constants.PNAME_VOICE));
                 }
 
+                /* Kickback */
+                if (mKickback.isChecked()) {
+                    startActivity(getIntent(Constants.PNAME_KICKBACK));
+                }
+
+                /* Soundback */
+                if (mSoundback.isChecked()) {
+                    startActivity(getIntent(Constants.PNAME_SOUNDBACK));
+                }
+
                 /* Street View */
                 if (mStreetView.isChecked()) {
                     startActivity(getIntent(Constants.PNAME_STREETVIEW));
+                }
+
+                /* Talkback */
+                if (mTalkback.isChecked()) {
+                    startActivity(getIntent(Constants.PNAME_TALKBACK));
                 }
 
                 /* Voice Search */
@@ -102,6 +125,35 @@ public class DownloadActivity extends Activity {
                 }
                 
                 finish();
+            }
+        });
+        mSelectAll = (Button) findViewById(R.id.main_btn_selectall);
+        mSelectAll.setOnClickListener(new OnClickListener(){
+            public void onClick(View view){
+                if(!mGmail.isChecked() && mGmail.isEnabled())
+                    mGmail.setChecked(true);
+                if(!mChromeToPhone.isChecked() && mChromeToPhone.isEnabled())
+                    mChromeToPhone.setChecked(true);
+                if(!mGoogleGoggles.isChecked() && mGoogleGoggles.isEnabled())
+                    mGoogleGoggles.setChecked(true);
+                if(!mGoogleMaps.isChecked() && mGoogleMaps.isEnabled())
+                    mGoogleMaps.setChecked(true);
+                if(!mGoogleSearch.isChecked() && mGoogleSearch.isEnabled())
+                    mGoogleSearch.setChecked(true);
+                if(!mGoogleVoice.isChecked() && mGoogleVoice.isEnabled())
+                    mGoogleVoice.setChecked(true);
+                if(!mKickback.isChecked() && mKickback.isEnabled())
+                    mKickback.setChecked(true);
+                if(!mSoundback.isChecked() && mSoundback.isEnabled())
+                    mSoundback.setChecked(true);
+                if(!mStreetView.isChecked() && mStreetView.isEnabled())
+                    mStreetView.setChecked(true);
+                if(!mTalkback.isChecked() && mTalkback.isEnabled())
+                    mTalkback.setChecked(true);
+                if(!mVoiceSearch.isChecked() && mVoiceSearch.isEnabled())
+                    mVoiceSearch.setChecked(true);
+                if(!mYoutube.isChecked() && mYoutube.isEnabled())
+                    mYoutube.setChecked(true);
             }
         });
         mCancelButton = (Button) findViewById(R.id.main_btn_cancel);
@@ -155,8 +207,17 @@ public class DownloadActivity extends Activity {
         /* Google Voice */
         mGoogleVoice.setEnabled(!isInstalled(Constants.PNAME_VOICE));
 
+        /* Kickback */
+        mKickback.setEnabled(!isInstalled(Constants.PNAME_KICKBACK));
+
+        /* Soundback */
+        mSoundback.setEnabled(!isInstalled(Constants.PNAME_SOUNDBACK));
+
         /* Street View */
         mStreetView.setEnabled(!isInstalled(Constants.PNAME_STREETVIEW));
+
+        /* Talkback */
+        mTalkback.setEnabled(!isInstalled(Constants.PNAME_TALKBACK));
 
         /* Voice Search */
         mVoiceSearch.setEnabled(!isInstalled(Constants.PNAME_VOICESEARCH));

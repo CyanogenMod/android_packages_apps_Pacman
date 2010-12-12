@@ -1,43 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:layout_width="fill_parent"
 	android:layout_height="fill_parent" android:orientation="vertical"
+	android:layout_weight="1"
 	xmlns:android="http://schemas.android.com/apk/res/android">
-	<LinearLayout android:layout_width="fill_parent"
-		android:layout_weight="1" android:layout_height="wrap_content"
-		android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
-		<CheckBox android:id="@+id/gmail" android:layout_height="wrap_content"
-			android:text="@string/gmail" android:layout_width="fill_parent" />
-		<CheckBox android:id="@+id/chrometophone"
-			android:layout_height="wrap_content" android:text="@string/chrometophone"
-			android:layout_width="fill_parent" />
-		<CheckBox android:id="@+id/googlegoggles"
-			android:layout_height="wrap_content" android:text="@string/googlegoggles"
-			android:layout_width="fill_parent" />
-		<CheckBox android:id="@+id/googlemaps" android:layout_height="wrap_content"
-			android:text="@string/googlemaps" android:layout_width="fill_parent" />
-		<CheckBox android:id="@+id/googlesearch"
-			android:layout_height="wrap_content" android:text="@string/googlesearch"
-			android:layout_width="fill_parent" />
-		<CheckBox android:id="@+id/googlevoice"
-			android:layout_height="wrap_content" android:text="@string/googlevoice"
-			android:layout_width="fill_parent" />
-		<CheckBox android:id="@+id/streetview" android:layout_height="wrap_content"
-			android:text="@string/streetview" android:layout_width="fill_parent" />
-		<CheckBox android:id="@+id/voicesearch"
-			android:layout_height="wrap_content" android:text="@string/voicesearch"
-			android:layout_width="fill_parent" />
-		<CheckBox android:id="@+id/youtube" android:layout_height="wrap_content"
-			android:text="@string/youtube" android:layout_width="fill_parent" />
-	</LinearLayout>
-	<LinearLayout android:layout_width="fill_parent"
+	<ScrollView android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_marginBottom="20dip"
+	    android:layout_weight="2">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+			<CheckBox android:id="@+id/gmail" android:layout_height="wrap_content"
+				android:text="@string/gmail" android:layout_width="fill_parent" />
+			<CheckBox android:id="@+id/chrometophone"
+				android:layout_height="wrap_content" android:text="@string/chrometophone"
+				android:layout_width="fill_parent" />
+			<CheckBox android:id="@+id/googlegoggles"
+				android:layout_height="wrap_content" android:text="@string/googlegoggles"
+				android:layout_width="fill_parent" />
+			<CheckBox android:id="@+id/googlemaps" android:layout_height="wrap_content"
+				android:text="@string/googlemaps" android:layout_width="fill_parent" />
+			<CheckBox android:id="@+id/googlesearch"
+				android:layout_height="wrap_content" android:text="@string/googlesearch"
+				android:layout_width="fill_parent" />
+			<CheckBox android:id="@+id/googlevoice"
+				android:layout_height="wrap_content" android:text="@string/googlevoice"
+				android:layout_width="fill_parent" />
+			<CheckBox android:id="@+id/kickback" android:layout_height="wrap_content"
+	            android:text="@string/kickback" android:layout_width="fill_parent" />
+	        <CheckBox android:id="@+id/soundback" android:layout_height="wrap_content"
+	            android:text="@string/soundback" android:layout_width="fill_parent" />
+			<CheckBox android:id="@+id/streetview" android:layout_height="wrap_content"
+				android:text="@string/streetview" android:layout_width="fill_parent" />
+			<CheckBox android:id="@+id/talkback" android:layout_height="wrap_content"
+	            android:text="@string/talkback" android:layout_width="fill_parent" />
+			<CheckBox android:id="@+id/voicesearch"
+				android:layout_height="wrap_content" android:text="@string/voicesearch"
+				android:layout_width="fill_parent" />
+			<CheckBox android:id="@+id/youtube" android:layout_height="wrap_content"
+				android:text="@string/youtube" android:layout_width="fill_parent" />
+		</LinearLayout>
+	</ScrollView>
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_weight="1"
+	    android:layout_marginTop="-20dip"
+	    android:gravity="bottom"
 		android:layout_height="wrap_content" android:orientation="horizontal"
-		android:padding="5dip" android:background="@android:drawable/bottom_bar"
+		android:background="@android:drawable/bottom_bar"
 		xmlns:android="http://schemas.android.com/apk/res/android">
 		<Button android:id="@+id/main_btn_ok" android:layout_width="wrap_content"
 			android:layout_height="wrap_content" android:text="@string/main_btn_ok"
-			android:layout_weight="1" />
+			android:layout_weight="1"/>
+		<Button android:id="@+id/main_btn_selectall" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="@string/main_btn_selectall"
+            android:layout_toRightOf="@id/main_btn_ok" android:layout_weight="1"/>
 		<Button android:id="@+id/main_btn_cancel" android:layout_width="wrap_content"
 			android:layout_height="wrap_content" android:text="@string/main_btn_cancel"
-			android:layout_weight="1" />
-	</LinearLayout>
+			android:layout_toRightOf="@id/main_btn_selectall"
+			android:layout_weight="1"/>
+	</RelativeLayout>
 </LinearLayout>

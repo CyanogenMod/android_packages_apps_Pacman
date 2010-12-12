@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">CM Gapps</string>
+	<string name="app_name">CM Gapps Installer</string>
 	<string name="activity_title">Choose the apps to install</string>
 
 	<!-- App Names -->
@@ -10,11 +10,15 @@
 	<string name="googlemaps">Google Maps</string>
 	<string name="googlesearch">Google Search</string>
 	<string name="googlevoice">Google Voice</string>
+	<string name="kickback">Kickback</string>
+	<string name="soundback">Soundback</string>
 	<string name="streetview">Street View on Google Maps</string>
+	<string name="talkback">Talkback</string>
 	<string name="voicesearch">Voice Search</string>
 	<string name="youtube">Youtube</string>
 
 	<!-- Buttons -->
 	<string name="main_btn_ok">OK</string>
+	<string name="main_btn_selectall">Select All</string>
 	<string name="main_btn_cancel">Cancel</string>
 </resources>
