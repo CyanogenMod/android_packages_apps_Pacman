@@ -60,7 +60,7 @@ public class DownloadActivity extends Activity {
                 if (mGmail.isChecked()) {
                     startActivity(getIntent(Constants.PNAME_GMAIL));
                 }
-                
+
                 /* Chrome to Phone */
                 if (mChromeToPhone.isChecked()) {
                     startActivity(getIntent(Constants.PNAME_CHROME));
@@ -143,22 +143,22 @@ public class DownloadActivity extends Activity {
 
         /* Google Goggles */
         mGoogleGoggles.setEnabled(!isInstalled(Constants.PNAME_GOGGLES));
-        
+
         /* Google Maps */
         mGoogleMaps.setEnabled(!isInstalled(Constants.PNAME_MAPS));
-        
+
         /* Google Search */
         mGoogleSearch.setEnabled(!isInstalled(Constants.PNAME_GOOGLESEARCH));
-        
+
         /* Google Voice */
         mGoogleVoice.setEnabled(!isInstalled(Constants.PNAME_VOICE));
-        
+
         /* Street View */
         mStreetView.setEnabled(!isInstalled(Constants.PNAME_STREETVIEW));
-        
+
         /* Voice Search */
         mVoiceSearch.setEnabled(!isInstalled(Constants.PNAME_VOICESEARCH));
-        
+
         /* YouTube */
         mYoutube.setEnabled(!isInstalled(Constants.PNAME_YOUTUBE));
     }
