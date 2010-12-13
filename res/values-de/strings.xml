@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Market-Apps Installation</string>
+  <string name="activity_title">Google-Apps zur Installation auswählen</string>
+
+  <!-- App Names -->
+  <string name="com_google_android_googlequicksearchbox">Google Suche</string>
+  <string name="com_google_android_street">Street View für Google Maps</string>
+  <string name="com_google_android_voicesearch">Sprachsuche</string>
+
+  <!-- Buttons -->
+  <string name="main_btn_selectall">Alle auswählen</string>
+  <string name="main_btn_cancel">Abbrechen</string>
+</resources>
