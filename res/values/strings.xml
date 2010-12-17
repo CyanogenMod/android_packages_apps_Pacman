@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">CM Gapps Installer</string>
+	<string name="app_name">Market Apps Installer</string>
 	<string name="activity_title">Choose the apps to install</string>
 
 	<!-- App Names -->
