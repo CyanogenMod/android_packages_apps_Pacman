@@ -70,6 +70,7 @@ public class DownloadActivity extends Activity {
                 }
                 ComponentName name = new ComponentName("com.teamdouche.pacman", "StartupActivity");
                 mPM.setComponentEnabledSetting(name, PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 0);
+                finish();
             }
         });
         mSelectAll = (Button) findViewById(R.id.main_btn_selectall);
@@ -87,6 +88,7 @@ public class DownloadActivity extends Activity {
             public void onClick(View view){
                 ComponentName name = new ComponentName("com.teamdouche.pacman", "StartupActivity");
                 mPM.setComponentEnabledSetting(name, PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 0);
+                finish();
             }
         });
     }
