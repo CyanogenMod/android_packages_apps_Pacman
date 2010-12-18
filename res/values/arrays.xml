@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="gapp_packages" translatable="false">
+    <string-array name="app_packages" translatable="false">
         <item>com.facebook.katana</item>
         <item>com.google.android.gm</item>
         <item>com.google.android.apps.chrometophone</item>
@@ -16,7 +16,7 @@
         <item>com.google.android.voicesearch</item>
         <item>com.google.android.youtube</item>
     </string-array>
-    <string-array name="gapp_names">
+    <string-array name="app_names">
         <item>Facebook</item>
         <item>Gmail</item>
         <item>Google Chrome to Phone</item>

@@ -1,9 +1,10 @@
-package com.cyanogenmod.gapps;
+package com.teamdouche.pacman;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
@@ -25,9 +26,9 @@ public class DownloadActivity extends Activity {
     private Button mSelectAll;
     private Button mCancelButton;
 
-    private String[] mGappPackages;
-    private String[] mGappNames;
-    private List<CheckBox> mGappCheckBoxes;
+    private String[] mAppPackages;
+    private String[] mAppNames;
+    private List<CheckBox> mAppCheckBoxes;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -39,19 +40,19 @@ public class DownloadActivity extends Activity {
         mPM = getPackageManager();
         
         Resources res = getResources();
-        mGappPackages = res.getStringArray(R.array.gapp_packages);
-        mGappNames = res.getStringArray(R.array.gapp_names);
-        mGappCheckBoxes = new ArrayList<CheckBox>();
+        mAppPackages = res.getStringArray(R.array.app_packages);
+        mAppNames = res.getStringArray(R.array.app_names);
+        mAppCheckBoxes = new ArrayList<CheckBox>();
 
-        LinearLayout gappContainer = (LinearLayout) findViewById(R.id.gapp_container);
+        LinearLayout appContainer = (LinearLayout) findViewById(R.id.app_container);
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-        for (int i = 0; i < mGappPackages.length; i++) {
+        for (int i = 0; i < mAppPackages.length; i++) {
             CheckBox cb = new CheckBox(getApplicationContext());
-            cb.setText(mGappNames[i]);
+            cb.setText(mAppNames[i]);
             cb.setLayoutParams(layoutParams);
 
-            gappContainer.addView(cb);
-            mGappCheckBoxes.add(cb);
+            appContainer.addView(cb);
+            mAppCheckBoxes.add(cb);
         }
 
         disableInstalled();
@@ -63,20 +64,20 @@ public class DownloadActivity extends Activity {
         mOkButton = (Button) findViewById(R.id.main_btn_ok);
         mOkButton.setOnClickListener(new OnClickListener(){
             public void onClick(View view){
-                for (int i = 0, s = mGappCheckBoxes.size(); i < s; i++) {
-                    if (mGappCheckBoxes.get(i).isChecked())
-                        startActivity(getIntent(mGappPackages[i]));
+                for (int i = 0, s = mAppCheckBoxes.size(); i < s; i++) {
+                    if (mAppCheckBoxes.get(i).isChecked())
+                        startActivity(getIntent(mAppPackages[i]));
                 }
-
-                finish();
+                ComponentName name = new ComponentName("com.teamdouche.pacman", "StartupActivity");
+                mPM.setComponentEnabledSetting(name, PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 0);
             }
         });
         mSelectAll = (Button) findViewById(R.id.main_btn_selectall);
         mSelectAll.setOnClickListener(new OnClickListener(){
             public void onClick(View view){
-                for (int i = 0, s = mGappCheckBoxes.size(); i < s; i++) {
-                    if (!mGappCheckBoxes.get(i).isChecked() && mGappCheckBoxes.get(i).isEnabled()) {
-                        mGappCheckBoxes.get(i).setChecked(true);
+                for (int i = 0, s = mAppCheckBoxes.size(); i < s; i++) {
+                    if (!mAppCheckBoxes.get(i).isChecked() && mAppCheckBoxes.get(i).isEnabled()) {
+                        mAppCheckBoxes.get(i).setChecked(true);
                     }
                 }
             }
@@ -84,7 +85,8 @@ public class DownloadActivity extends Activity {
         mCancelButton = (Button) findViewById(R.id.main_btn_cancel);
         mCancelButton.setOnClickListener(new OnClickListener(){
             public void onClick(View view){
-                finish();
+                ComponentName name = new ComponentName("com.teamdouche.pacman", "StartupActivity");
+                mPM.setComponentEnabledSetting(name, PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 0);
             }
         });
     }
@@ -114,8 +116,8 @@ public class DownloadActivity extends Activity {
     }
 
     private void disableInstalled() {
-        for (int i = 0, s = mGappCheckBoxes.size(); i < s; i++) {
-            mGappCheckBoxes.get(i).setEnabled(!isInstalled(mGappPackages[i]));
+        for (int i = 0, s = mAppCheckBoxes.size(); i < s; i++) {
+            mAppCheckBoxes.get(i).setEnabled(!isInstalled(mAppPackages[i]));
         }
     }
 }
