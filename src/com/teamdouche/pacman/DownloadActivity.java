@@ -68,8 +68,6 @@ public class DownloadActivity extends Activity {
                     if (mAppCheckBoxes.get(i).isChecked())
                         startActivity(getIntent(mAppPackages[i]));
                 }
-                ComponentName name = new ComponentName("com.teamdouche.pacman", "StartupActivity");
-                mPM.setComponentEnabledSetting(name, PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 0);
                 finish();
             }
         });
@@ -86,8 +84,6 @@ public class DownloadActivity extends Activity {
         mCancelButton = (Button) findViewById(R.id.main_btn_cancel);
         mCancelButton.setOnClickListener(new OnClickListener(){
             public void onClick(View view){
-                ComponentName name = new ComponentName("com.teamdouche.pacman", "StartupActivity");
-                mPM.setComponentEnabledSetting(name, PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 0);
                 finish();
             }
         });
