@@ -3,22 +3,22 @@
 	<string name="app_name">CM Gapps Installer</string>
 	<string name="activity_title">Choose the apps to install</string>
 
-	<!-- App Names -->
-	<string name="facebook">Facebook</string>
-	<string name="gmail">Gmail</string>
-	<string name="chrometophone">Google Chrome to Phone</string>
-	<string name="googlegoggles">Google Goggles</string>
-	<string name="googlemaps">Google Maps</string>
-	<string name="googlesearch">Google Search</string>
-	<string name="googlevoice">Google Voice</string>
-	<string name="kickback">Kickback</string>
-	<string name="soundback">Soundback</string>
-	<string name="streetview">Street View on Google Maps</string>
-	<string name="talkback">Talkback</string>
-	<string name="twitter">Twitter</string>
-	<string name="voicesearch">Voice Search</string>
-	<string name="youtube">Youtube</string>
-
+    <string name="com.google.android.gm">Gmail</string>
+    <string name="com.google.android.apps.chrometophone">Chrome to Phone</string>
+    <string name="com.google.android.apps.unveil">Google Goggles</string>
+    <string name="com.google.android.apps.maps">Google Maps</string>
+    <string name="com.google.android.googlequicksearchbox">Google Search</string>
+    <string name="com.google.android.apps.googlevoice">Google Voice</string>
+    <string name="com.google.android.street">Street View</string>
+    <string name="com.google.android.voicesearch">Voice Search</string>
+    <string name="com.google.android.youtube">YouTube</string>
+    <string name="com.google.android.marvin.kickback">Kickback</string>
+    <string name="com.google.android.marvin.soundback">Soundback</string>
+    <string name="com.google.android.marvin.talkback">Talkback</string>
+    <string name="com.facebook.katana">Facebook</string>
+    <string name="com.twitter.android">Twitter</string>
+        
+        
 	<!-- Buttons -->
 	<string name="main_btn_ok">OK</string>
 	<string name="main_btn_selectall">Select All</string>

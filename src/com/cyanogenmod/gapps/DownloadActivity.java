@@ -1,39 +1,80 @@
 package com.cyanogenmod.gapps;
 
+import java.lang.reflect.Field;
+
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ListView;
 
 import com.cyanogenmod.gapps.utils.Constants;
 
 public class DownloadActivity extends Activity {
     private PackageManager mPM;
-    private CheckBox mGmail;
-    private CheckBox mChromeToPhone;
-    private CheckBox mFacebook;
-    private CheckBox mGoogleGoggles;
-    private CheckBox mGoogleMaps;
-    private CheckBox mGoogleSearch;
-    private CheckBox mGoogleVoice;
-    private CheckBox mKickback;
-    private CheckBox mSoundback;
-    private CheckBox mStreetView;
-    private CheckBox mTalkback;
-    private CheckBox mTwitter;
-    private CheckBox mVoiceSearch;
-    private CheckBox mYoutube;
 
     private Button mOkButton;
     private Button mSelectAll;
     private Button mCancelButton;
+    private ListView mListView;
+    private PackageAdapter mAdapter;
+    private static Class StringClass = R.string.class;
+
+    private class Package {
+        public Package(String namespace) {
+            Namespace = namespace;
+            
+            String resourceName = Namespace.replace('.', '_');
+            Field field;
+            try {
+                field = StringClass.getField(resourceName);
+                int resourceId = (Integer)field.get(null);
+                Name = getResources().getString(resourceId);
+            }
+            catch (Exception e) {
+                Name = Namespace;
+            }
+        }
+        public String Name;
+        public String Namespace;
+        public boolean Install;
+    }
+    
+    private class PackageAdapter extends ArrayAdapter<Package> {
+        private LayoutInflater mInflater;
+        
+        public PackageAdapter(Context context) {
+            super(context, R.layout.app_package);
+            
+            mInflater = (LayoutInflater)getSystemService(LAYOUT_INFLATER_SERVICE);
+        }
+        
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            CheckBox view = (CheckBox)convertView;
+            if (view == null) {
+                view = (CheckBox)mInflater.inflate(R.layout.app_package, null);
+            }
+            
+            Package pkg = getItem(position);
+            boolean enabled = !isInstalled(pkg.Namespace);
+            view.setEnabled(enabled);
+            view.setChecked(enabled && pkg.Install);
+            view.setText(pkg.Name);            
+            return view;
+        }
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -44,134 +85,36 @@ public class DownloadActivity extends Activity {
 
         mPM = getPackageManager();
 
-        mGmail = (CheckBox) findViewById(R.id.gmail);
-        mChromeToPhone = (CheckBox) findViewById(R.id.chrometophone);
-        mFacebook = (CheckBox) findViewById(R.id.facebook);
-        mGoogleGoggles = (CheckBox) findViewById(R.id.googlegoggles);
-        mGoogleMaps = (CheckBox) findViewById(R.id.googlemaps);
-        mGoogleSearch = (CheckBox) findViewById(R.id.googlesearch);
-        mGoogleVoice = (CheckBox) findViewById(R.id.googlevoice);
-        mKickback= (CheckBox) findViewById(R.id.kickback);
-        mSoundback= (CheckBox) findViewById(R.id.soundback);
-        mStreetView = (CheckBox) findViewById(R.id.streetview);
-        mTalkback= (CheckBox) findViewById(R.id.talkback);
-        mTwitter= (CheckBox) findViewById(R.id.twitter);
-        mVoiceSearch = (CheckBox) findViewById(R.id.voicesearch);
-        mYoutube = (CheckBox) findViewById(R.id.youtube);
-
-        disableInstalled();
-
         mOkButton = (Button) findViewById(R.id.main_btn_ok);
         mSelectAll = (Button) findViewById(R.id.main_btn_selectall);
         mCancelButton = (Button) findViewById(R.id.main_btn_cancel);
+        mListView = (ListView) findViewById(R.id.listview);
+        mAdapter = new PackageAdapter(this);
+        for (String p: Constants.Packages) {
+            Package pkg = new Package(p);
+            mAdapter.add(pkg);
+        }
+        
+        mListView.setAdapter(mAdapter);
 
         mOkButton = (Button) findViewById(R.id.main_btn_ok);
         mOkButton.setOnClickListener(new OnClickListener(){
             public void onClick(View view){
-                /* Gmail */
-                if (mGmail.isChecked()) {
-                    startActivity(getIntent(Constants.PNAME_GMAIL));
+                for (int i = 0; i < mAdapter.getCount(); i++) {
+                    Package pkg = mAdapter.getItem(i);
+                    startActivity(getMarketIntent(pkg.Namespace));
                 }
-
-                /* Chrome to Phone */
-                if (mChromeToPhone.isChecked()) {
-                    startActivity(getIntent(Constants.PNAME_CHROME));
-                }
-
-                /* Facebook */
-                if (mFacebook.isChecked()) {
-                    startActivity(getIntent(Constants.PNAME_FACEBOOK));
-                }
-
-                /* Google Goggles */
-                if (mGoogleGoggles.isChecked()) {
-                    startActivity(getIntent(Constants.PNAME_GOGGLES));
-                }
-
-                /* Google Maps */
-                if (mGoogleMaps.isChecked()) {
-                    startActivity(getIntent(Constants.PNAME_MAPS));
-                }
-
-                /* Google Search */
-                if (mGoogleSearch.isChecked()) {
-                    startActivity(getIntent(Constants.PNAME_GOOGLESEARCH));
-                }
-
-                /* Google Voice */
-                if (mGoogleVoice.isChecked()) {
-                    startActivity(getIntent(Constants.PNAME_VOICE));
-                }
-
-                /* Kickback */
-                if (mKickback.isChecked()) {
-                    startActivity(getIntent(Constants.PNAME_KICKBACK));
-                }
-
-                /* Soundback */
-                if (mSoundback.isChecked()) {
-                    startActivity(getIntent(Constants.PNAME_SOUNDBACK));
-                }
-
-                /* Street View */
-                if (mStreetView.isChecked()) {
-                    startActivity(getIntent(Constants.PNAME_STREETVIEW));
-                }
-
-                /* Talkback */
-                if (mTalkback.isChecked()) {
-                    startActivity(getIntent(Constants.PNAME_TALKBACK));
-                }
-
-                /* Twitter */
-                if (mTalkback.isChecked()) {
-                    startActivity(getIntent(Constants.PNAME_TWITTER));
-                }
-
-                /* Voice Search */
-                if (mVoiceSearch.isChecked()) {
-                    startActivity(getIntent(Constants.PNAME_VOICESEARCH));
-                }
-
-                /* YouTube */
-                if (mYoutube.isChecked()) {
-                    startActivity(getIntent(Constants.PNAME_YOUTUBE));
-                }
-                
                 finish();
             }
         });
         mSelectAll = (Button) findViewById(R.id.main_btn_selectall);
         mSelectAll.setOnClickListener(new OnClickListener(){
             public void onClick(View view){
-                if(!mGmail.isChecked() && mGmail.isEnabled())
-                    mGmail.setChecked(true);
-                if(!mChromeToPhone.isChecked() && mChromeToPhone.isEnabled())
-                    mChromeToPhone.setChecked(true);
-                if(!mFacebook.isChecked() && mFacebook.isEnabled())
-                    mFacebook.setChecked(true);
-                if(!mGoogleGoggles.isChecked() && mGoogleGoggles.isEnabled())
-                    mGoogleGoggles.setChecked(true);
-                if(!mGoogleMaps.isChecked() && mGoogleMaps.isEnabled())
-                    mGoogleMaps.setChecked(true);
-                if(!mGoogleSearch.isChecked() && mGoogleSearch.isEnabled())
-                    mGoogleSearch.setChecked(true);
-                if(!mGoogleVoice.isChecked() && mGoogleVoice.isEnabled())
-                    mGoogleVoice.setChecked(true);
-                if(!mKickback.isChecked() && mKickback.isEnabled())
-                    mKickback.setChecked(true);
-                if(!mSoundback.isChecked() && mSoundback.isEnabled())
-                    mSoundback.setChecked(true);
-                if(!mStreetView.isChecked() && mStreetView.isEnabled())
-                    mStreetView.setChecked(true);
-                if(!mTalkback.isChecked() && mTalkback.isEnabled())
-                    mTalkback.setChecked(true);
-                if(!mTwitter.isChecked() && mTwitter.isEnabled())
-                    mTwitter.setChecked(true);
-                if(!mVoiceSearch.isChecked() && mVoiceSearch.isEnabled())
-                    mVoiceSearch.setChecked(true);
-                if(!mYoutube.isChecked() && mYoutube.isEnabled())
-                    mYoutube.setChecked(true);
+                for (int i = 0; i < mAdapter.getCount(); i++) {
+                    Package pkg = mAdapter.getItem(i);
+                    pkg.Install = true;
+                }
+                mAdapter.notifyDataSetChanged();
             }
         });
         mCancelButton = (Button) findViewById(R.id.main_btn_cancel);
@@ -182,7 +125,7 @@ public class DownloadActivity extends Activity {
         });
     }
 
-    private Intent getIntent(String pname) {
+    private Intent getMarketIntent(String pname) {
         Uri uri = Uri.parse("market://details?id=" + pname);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
 
@@ -204,49 +147,5 @@ public class DownloadActivity extends Activity {
         }
 
         return installed;
-    }
-
-    private void disableInstalled() {
-        /* Gmail */
-        mGmail.setEnabled(!isInstalled(Constants.PNAME_GMAIL));
-
-        /* Chrome to Phone */
-        mChromeToPhone.setEnabled(!isInstalled(Constants.PNAME_CHROME));
-
-        /* Facebook */
-        mFacebook.setEnabled(!isInstalled(Constants.PNAME_FACEBOOK));
-
-        /* Google Goggles */
-        mGoogleGoggles.setEnabled(!isInstalled(Constants.PNAME_GOGGLES));
-
-        /* Google Maps */
-        mGoogleMaps.setEnabled(!isInstalled(Constants.PNAME_MAPS));
-
-        /* Google Search */
-        mGoogleSearch.setEnabled(!isInstalled(Constants.PNAME_GOOGLESEARCH));
-
-        /* Google Voice */
-        mGoogleVoice.setEnabled(!isInstalled(Constants.PNAME_VOICE));
-
-        /* Kickback */
-        mKickback.setEnabled(!isInstalled(Constants.PNAME_KICKBACK));
-
-        /* Soundback */
-        mSoundback.setEnabled(!isInstalled(Constants.PNAME_SOUNDBACK));
-
-        /* Street View */
-        mStreetView.setEnabled(!isInstalled(Constants.PNAME_STREETVIEW));
-
-        /* Talkback */
-        mTalkback.setEnabled(!isInstalled(Constants.PNAME_TALKBACK));
-
-        /* Twitter */
-        mTwitter.setEnabled(!isInstalled(Constants.PNAME_TWITTER));
-
-        /* Voice Search */
-        mVoiceSearch.setEnabled(!isInstalled(Constants.PNAME_VOICESEARCH));
-
-        /* YouTube */
-        mYoutube.setEnabled(!isInstalled(Constants.PNAME_YOUTUBE));
     }
 }
