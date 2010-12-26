@@ -3,20 +3,20 @@
 	<string name="app_name">CM Gapps Installer</string>
 	<string name="activity_title">Choose the apps to install</string>
 
-    <string name="com.google.android.gm">Gmail</string>
-    <string name="com.google.android.apps.chrometophone">Chrome to Phone</string>
-    <string name="com.google.android.apps.unveil">Google Goggles</string>
-    <string name="com.google.android.apps.maps">Google Maps</string>
-    <string name="com.google.android.googlequicksearchbox">Google Search</string>
-    <string name="com.google.android.apps.googlevoice">Google Voice</string>
-    <string name="com.google.android.street">Street View</string>
-    <string name="com.google.android.voicesearch">Voice Search</string>
-    <string name="com.google.android.youtube">YouTube</string>
-    <string name="com.google.android.marvin.kickback">Kickback</string>
-    <string name="com.google.android.marvin.soundback">Soundback</string>
-    <string name="com.google.android.marvin.talkback">Talkback</string>
-    <string name="com.facebook.katana">Facebook</string>
-    <string name="com.twitter.android">Twitter</string>
+    <string name="com_google_android_gm">Gmail</string>
+    <string name="com_google_android_apps_chrometophone">Chrome to Phone</string>
+    <string name="com_google_android_apps_unveil">Google Goggles</string>
+    <string name="com_google_android_apps_maps">Google Maps</string>
+    <string name="com_google_android_googlequicksearchbox">Google Search</string>
+    <string name="com_google_android_apps_googlevoice">Google Voice</string>
+    <string name="com_google_android_street">Street View</string>
+    <string name="com_google_android_voicesearch">Voice Search</string>
+    <string name="com_google_android_youtube">YouTube</string>
+    <string name="com_google_android_marvin_kickback">Kickback</string>
+    <string name="com_google_android_marvin_soundback">Soundback</string>
+    <string name="com_google_android_marvin_talkback">Talkback</string>
+    <string name="com_facebook_katana">Facebook</string>
+    <string name="com_twitter_android">Twitter</string>
         
         
 	<!-- Buttons -->
