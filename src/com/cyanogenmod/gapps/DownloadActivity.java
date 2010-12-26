@@ -17,6 +17,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ListView;
 
 import com.cyanogenmod.gapps.utils.Constants;
@@ -62,12 +64,18 @@ public class DownloadActivity extends Activity {
         
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
+            final Package pkg = getItem(position);
             CheckBox view = (CheckBox)convertView;
             if (view == null) {
                 view = (CheckBox)mInflater.inflate(R.layout.app_package, null);
             }
+            view.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    pkg.Install = isChecked;
+                }
+            });
             
-            Package pkg = getItem(position);
             boolean enabled = !isInstalled(pkg.Namespace);
             view.setEnabled(enabled);
             view.setChecked(enabled && pkg.Install);
