@@ -110,7 +110,8 @@ public class DownloadActivity extends Activity {
             public void onClick(View view){
                 for (int i = 0; i < mAdapter.getCount(); i++) {
                     Package pkg = mAdapter.getItem(i);
-                    startActivity(getMarketIntent(pkg.Namespace));
+                    if (pkg.Install)
+                        startActivity(getMarketIntent(pkg.Namespace));
                 }
                 finish();
             }
