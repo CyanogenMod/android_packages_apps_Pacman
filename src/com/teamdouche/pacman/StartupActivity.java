@@ -13,13 +13,8 @@ public class StartupActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        PackageManager pm = getPackageManager();
-        try { 
-            pm.getApplicationEnabledSetting("com.android.vending");
-        } catch (java.lang.IllegalArgumentException iae) {
-            finish();
-        }
 
+        Log.v("Pacman", "Starting Pacman Download Activity");
         Intent starterIntent = new Intent(this, DownloadActivity.class);
         startActivityForResult(starterIntent, 0);
     }

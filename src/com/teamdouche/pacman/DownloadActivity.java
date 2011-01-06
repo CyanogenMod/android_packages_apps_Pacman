@@ -21,7 +21,6 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ListView;
 
-
 public class DownloadActivity extends Activity {
     private PackageManager mPM;
 
