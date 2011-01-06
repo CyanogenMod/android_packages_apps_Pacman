@@ -4,16 +4,20 @@
 	android:versionName="1.0">
 	<uses-permission android:name="android.permission.SET_ALWAYS_FINISH" />
 	 <application android:icon="@drawable/icon" android:label="@string/app_name">
-		<activity android:name=".StartupActivity" android:label="@string/app_name">
-			<intent-filter android:priority="0">
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="android.intent.category.HOME" />
-				<category android:name="android.intent.category.DEFAULT" />
-			</intent-filter>
-		</activity>
+        <receiver android:name=".PacmanReciever" android:label="@string/app_name" android:exported="true" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.server.checkin.CHECKIN"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name=".StartupActivity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 		<activity android:name=".DownloadActivity" android:label="@string/app_name">
 			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
+			        <action android:name="android.intent.action.MAIN" />
 				<!-- For testing -->
 <!--				<category android:name="android.intent.category.LAUNCHER" />-->
 			</intent-filter>

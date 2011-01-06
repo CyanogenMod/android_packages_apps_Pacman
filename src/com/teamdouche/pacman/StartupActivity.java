@@ -13,13 +13,8 @@ public class StartupActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        PackageManager pm = getPackageManager();
-        try { 
-            pm.getApplicationEnabledSetting("com.android.vending");
-        } catch (java.lang.IllegalArgumentException iae) {
-            finish();
-        }
 
+        Log.v("Pacman", "Starting Pacman Download Activity");
         Intent starterIntent = new Intent(this, DownloadActivity.class);
         startActivityForResult(starterIntent, 0);
     }
@@ -29,8 +24,7 @@ public class StartupActivity extends Activity {
         super.onActivityResult(requestCode, resultCode, data);
         // remove this activity from the package manager.
         PackageManager pm = getPackageManager();
-        ComponentName name = new ComponentName(this, StartupActivity.class);
-        pm.setComponentEnabledSetting(name, PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 0);
+        pm.setApplicationEnabledSetting("com.teamdouche.pacman", PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 0);
         finish();
     }
 }
