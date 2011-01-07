@@ -11,10 +11,10 @@ public class PacmanReciever extends android.content.BroadcastReceiver {
         // TODO Auto-generated method stub
         Log.v("Pacman", "Starting Pacman");
         Intent intent = new Intent();
-        intent.setClassName("com.teamdouche.pacman", "StartupActivity");
+        intent.setClass(context, StartupActivity.class);
         intent.setAction(StartupActivity.class.getName()); 
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS); 
-        context.sendBroadcast(intent);
+        context.startActivity(intent);
     }
 
 }

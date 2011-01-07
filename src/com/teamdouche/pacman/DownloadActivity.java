@@ -107,7 +107,7 @@ public class DownloadActivity extends Activity {
         mOkButton = (Button) findViewById(R.id.main_btn_ok);
         mOkButton.setOnClickListener(new OnClickListener(){
             public void onClick(View view){
-                for (int i = 0; i < mAdapter.getCount(); i++) {
+                for (int i = mAdapter.getCount() - 1; i >= 0 ; i--) {
                     Package pkg = mAdapter.getItem(i);
                     if (pkg.Install && !pkg.AlreadyInstalled)
                         startActivity(getMarketIntent(pkg.Namespace));
