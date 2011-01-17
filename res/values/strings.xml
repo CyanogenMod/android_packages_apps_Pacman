@@ -41,4 +41,8 @@
 	<string name="main_btn_ok">OK</string>
 	<string name="main_btn_selectall">Select All</string>
 	<string name="main_btn_cancel">Cancel</string>
+
+    <!-- Alert Dialog -->
+    <string name="alert_dialog_title">IMPORTANT: Read this!</string>
+    <string name="alert_dialog_message">This program will only appear once and is used to search for applications on the market.  However, in some countries not all of the applications will appear until the user spoofs their locale.  If you would like this program to show at a later time, after taking appropriate steps, click CANCEL below.</string>
 </resources>
