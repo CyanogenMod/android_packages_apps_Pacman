@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">Market-Apps Installation</string>
-  <string name="activity_title">Google-Apps zur Installation auswählen</string>
+  <string name="activity_title">Apps zur Installation auswählen</string>
 
   <!-- App Names -->
   <string name="com_google_android_googlequicksearchbox">Google Suche</string>
