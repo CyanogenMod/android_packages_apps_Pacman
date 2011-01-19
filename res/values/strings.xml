@@ -4,6 +4,7 @@
 	<string name="activity_title">Choose the apps to install</string>
 
     <string-array name="app_packages" translatable="false">
+        <item>com.google.android.carhome</item>
         <item>com.facebook.katana</item>
         <item>com.google.android.gm</item>
         <item>com.google.android.apps.chrometophone</item>
@@ -36,9 +37,14 @@
     <string name="com_google_android_marvin_talkback">Talkback</string>
     <string name="com_facebook_katana">Facebook</string>
     <string name="com_twitter_android">Twitter</string>
+    <string name="com_google_android_carhome">Car Home</string>
         
 	<!-- Buttons -->
 	<string name="main_btn_ok">OK</string>
 	<string name="main_btn_selectall">Select All</string>
 	<string name="main_btn_cancel">Cancel</string>
+
+    <!-- Alert Dialog -->
+    <string name="alert_dialog_title">IMPORTANT: Read this!</string>
+    <string name="alert_dialog_message">This program will only appear once and is used to search for applications on the market.  However, many users may wish to postpone running this application for various reasons (e.g. connect to Wi-Fi).  If you would like this program to show at a later time, after taking appropriate steps, click CANCEL below.</string>
 </resources>
