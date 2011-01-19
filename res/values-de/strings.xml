@@ -11,4 +11,8 @@
   <!-- Buttons -->
   <string name="main_btn_selectall">Alle auswählen</string>
   <string name="main_btn_cancel">Abbrechen</string>
+
+  <!-- Alert Dialog -->
+  <string name="alert_dialog_title">WICHTIG: Bitte lesen!</string>
+  <string name="alert_dialog_message">Dieses Programm wird normalerweise nur einmal aufgerufen und dient dazu, bestimmte Programme im Android Market zu suchen. Es ist jedoch möglich das Programm zu einem späteren Zeitpunkt erneut aufzurufen (zB. nach WLAN-Verbindung). Wenn du es später ausführen möchtest drücke jetzt auf ABBRECHEN.</string>
 </resources>
