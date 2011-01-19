@@ -19,9 +19,13 @@
     <string name="com_google_android_marvin_talkback">Talkback</string>
     <string name="com_facebook_katana">Facebook</string>
     <string name="com_twitter_android">Twitter</string>
-        
+
     <!-- Buttons -->
     <string name="main_btn_ok">OK</string>
     <string name="main_btn_selectall">全て選択</string>
     <string name="main_btn_cancel">キャンセル</string>
+
+    <!-- Alert Dialog -->
+    <string name="alert_dialog_title">重要: 読んでください!</string>
+    <string name="alert_dialog_message">このプログラムはマーケットアプリの検索に利用され、最初の一度しか表示されません。しかしながら、多くのユーザーがこのプログラムの起動をあとで行いたいかもしれません(例えばWi-Fiに繋いでからなど)。もし、あなたが適切なステップを踏んだあとでこのプログラムを起動したいなら、キャンセルをクリックしてください。</string>
 </resources>
