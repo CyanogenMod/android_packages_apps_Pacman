@@ -4,6 +4,7 @@
 	<string name="activity_title">Choose the apps to install</string>
 
     <string-array name="app_packages" translatable="false">
+        <item>com.google.android.carhome</item>
         <item>com.facebook.katana</item>
         <item>com.google.android.gm</item>
         <item>com.google.android.apps.chrometophone</item>
@@ -36,6 +37,7 @@
     <string name="com_google_android_marvin_talkback">Talkback</string>
     <string name="com_facebook_katana">Facebook</string>
     <string name="com_twitter_android">Twitter</string>
+    <string name="com_google_android_carhome">Car Home</string>
         
 	<!-- Buttons -->
 	<string name="main_btn_ok">OK</string>
