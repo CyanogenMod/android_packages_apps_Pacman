@@ -19,9 +19,14 @@
     <string name="com_google_android_marvin_talkback">Talkback</string>
     <string name="com_facebook_katana">Facebook</string>
     <string name="com_twitter_android">Twitter</string>
+    <string name="com_google_android_carhome">Car Home</string>
 
         <!-- Buttons -->
         <string name="main_btn_ok">OK</string>
-        <string name="main_btn_selectall">Seleziona tutto</string>
+        <string name="main_btn_selectall">Sel. tutto</string>
         <string name="main_btn_cancel">Annulla</string>
+
+        <!-- Alert Dialog -->
+    <string name="alert_dialog_title">IMPORTANTE: Leggi attentamente!</string>
+    <string name="alert_dialog_message">Questo programma verrà eseguito una sola volta e ha la funzione di cercare le applicazioni nel market. Molti utenti, per diverse ragioni, possono preferire di utilizzare questa applicazione in un secondo momento (dopo essersi connessi al Wi-Fi per esempio). Se vuoi visualizzare questo programma più tardi clicca Annulla.</string>
 </resources>
