@@ -24,4 +24,8 @@
     <string name="main_btn_ok">OK</string>
     <string name="main_btn_selectall">Tout sélectionner</string>
     <string name="main_btn_cancel">Annuler</string>
+
+    <!-- Alert Dialog -->
+    <string name="alert_dialog_title">IMPORTANT: Veuillez lire !</string>
+    <string name="alert_dialog_message">Ce programme n\'apparaîtra qu\'une seule fois. Il vous permet de chercher certaines applications système dans le Market. Cependant, beaucoup d\'utilisateurs souhaitent reporter cette opération pour diverses raisons (par ex. se connecter au Wi-Fi). Si vous voulez revoir ce programme plus tard, après avoir fait le nécessaire, cliquez sur ANNULER ci-dessous.</string>
 </resources>
