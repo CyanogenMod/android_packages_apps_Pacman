@@ -26,5 +26,5 @@
 
     <!-- Alert Dialog -->
     <string name="alert_dialog_title">UWAGA!</string>
-    <string name="alert_dialog_message">Ten program pojawi się tylko raz i służy do wyszukiwania aplikacjiw Markecie.  Wiele osób pragnie jednak odłożyć tę czynność na później (np. by połączyć się z siecią Wi-Fi).  Jeśli chcesz by program pojawił się później, naciśnij przycisk Anuluj</string>
+    <string name="alert_dialog_message">Ten program pojawi się tylko raz i służy do wyszukiwania aplikacji w Markecie.  Wiele osób pragnie jednak odłożyć tę czynność na później (np. by połączyć się z siecią Wi-Fi).  Jeśli chcesz by program pojawił się później, naciśnij przycisk Anuluj</string>
 </resources>
