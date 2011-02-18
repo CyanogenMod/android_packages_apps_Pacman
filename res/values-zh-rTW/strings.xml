@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Market 軟體安裝工具</string>
+	<string name="activity_title">選擇要安裝的應用程式</string>
+
+    <!-- skipping untranslatable /resources:0/string-array:name=app_packages -->
+
+	<!-- Don't put these in an array. We find them by reflection. Relying on array order
+	     to be the same is unreliable as translations get out of sync. -->
+    <string name="com_google_android_gm">Gmail</string>
+    <string name="com_google_android_apps_chrometophone">Google Chrome to Phone</string>
+    <string name="com_google_android_apps_unveil">Google Goggles</string>
+    <string name="com_google_android_apps_maps">Google 地圖</string>
+    <string name="com_google_android_googlequicksearchbox">Google 搜尋</string>
+    <string name="com_google_android_apps_googlevoice">Google Voice</string>
+    <string name="com_google_android_street">Google 地圖的街景服務</string>
+    <string name="com_google_android_voicesearch">語音搜尋</string>
+    <string name="com_google_android_youtube">YouTube</string>
+    <string name="com_google_android_marvin_kickback">Kickback</string>
+    <string name="com_google_android_marvin_soundback">Soundback</string>
+    <string name="com_google_android_marvin_talkback">Talkback</string>
+    <string name="com_facebook_katana">Facebook</string>
+    <string name="com_twitter_android">Twitter</string>
+    <string name="com_google_android_carhome">Car Home</string>
+        
+	<!-- Buttons -->
+	<string name="main_btn_ok">確定</string>
+	<string name="main_btn_selectall">全選</string>
+	<string name="main_btn_cancel">取消</string>
+
+    <!-- Alert Dialog -->
+    <string name="alert_dialog_title">重要：務必閱讀！</string>
+    <string name="alert_dialog_message">本程式只能使用一次，用途是在 Market 上搜尋各個您選擇要安裝的 Google 應用程式。然而，有很多使用者會因為各種理由（例如希望先連接 Wi-Fi）而想要推遲本程式的執行。如果您想本程式在往後再次出現，好讓您能先完成某些必要工作的話，現在請按“取消”。</string>
+</resources>
