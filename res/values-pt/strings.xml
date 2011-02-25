@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Instalador de Aplicativo do Market</string>
+    <string name="activity_title">Selecione as aplicações para instalar</string>
+
+    <!-- Don't put these in an array. We find them by reflection. Relying on array order
+	 to be the same is unreliable as translations get out of sync. -->
+    <string name="com_google_android_gm">Gmail</string>
+    <string name="com_google_android_apps_chrometophone">Google Chrome to Phone</string>
+    <string name="com_google_android_apps_unveil">Google Goggles</string>
+    <string name="com_google_android_apps_maps">Google Maps</string>
+    <string name="com_google_android_googlequicksearchbox">Google Search</string>
+    <string name="com_google_android_apps_googlevoice">Google Voice</string>
+    <string name="com_google_android_street">Street View em Google Maps</string>
+    <string name="com_google_android_voicesearch">Voice Search</string>
+    <string name="com_google_android_youtube">YouTube</string>
+    <string name="com_google_android_marvin_kickback">Kickback</string>
+    <string name="com_google_android_marvin_soundback">Soundback</string>
+    <string name="com_google_android_marvin_talkback">Talkback</string>
+    <string name="com_facebook_katana">Facebook</string>
+    <string name="com_twitter_android">Twitter</string>
+    <string name="com_google_android_carhome">Car Home</string>
+        
+    <!-- Buttons -->
+    <string name="main_btn_ok">OK</string>
+    <string name="main_btn_selectall">Selecionar tudo</string>
+    <string name="main_btn_cancel">Cancelar</string>
+
+    <!-- Alert Dialog -->
+    <string name="alert_dialog_title">IMPORTANTE: Leia isto!</string>
+    <string name="alert_dialog_message">Esite programa só irá aparecer uma vez e é usado para procurar aplicações no market. Porém, muitos usuários deseja rodar esta aplicação depois por diversos motivos (ex. conectar a Wi-Fi). Se você deseja que este programa seja mostrado um tempo depois, depois de tomar os passos apropriados, clique Cancelar abaixo.</string>
+</resources>
