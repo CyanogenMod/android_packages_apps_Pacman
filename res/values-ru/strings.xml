@@ -14,6 +14,6 @@
 	<string name="main_btn_cancel">Отмена</string>
 
     <!-- Alert Dialog -->
-    <string name="alert_dialog_title">ВНИМАНИЕ: прочтите это!</string>
+    <string name="alert_dialog_title">ВНИМАНИЕ!</string>
     <string name="alert_dialog_message">Эта программа запускается только один раз и используется для поиска приложений в Android Market. Однако многим пользователям понадобиться отложить запуск этого приложения, например, для включения Wi-Fi. Если Вы хотите отложить её запуск, нажмите кнопку Отмена.</string>
 </resources>
