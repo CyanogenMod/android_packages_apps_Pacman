@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Установка приложений из Android Market</string>
+	<string name="activity_title">Выберите приложения для установки</string>
+
+    <string-array name="app_packages" translatable="false">
+        <item>com.facebook.katana</item>
+        <item>com.google.android.gm</item>
+        <item>com.google.android.apps.chrometophone</item>
+        <item>com.google.android.apps.unveil</item>
+        <item>com.google.android.apps.maps</item>
+        <item>com.google.android.googlequicksearchbox</item>
+        <item>com.google.android.apps.googlevoice</item>
+        <item>com.google.android.marvin.kickback</item>
+        <item>com.google.android.marvin.soundback</item>
+        <item>com.google.android.marvin.talkback</item>
+        <item>com.twitter.android</item>
+        <item>com.google.android.street</item>
+        <item>com.google.android.voicesearch</item>
+        <item>com.google.android.youtube</item>
+    </string-array>
+
+	<!-- Don't put these in an array. We find them by reflection. Relying on array order
+	     to be the same is unreliable as translations get out of sync. -->
+    <string name="com_google_android_gm">Gmail</string>
+    <string name="com_google_android_apps_chrometophone">Google Chrome to Phone</string>
+    <string name="com_google_android_apps_unveil">Google Goggles</string>
+    <string name="com_google_android_apps_maps">Карты Google</string>
+    <string name="com_google_android_googlequicksearchbox">Поиск Google</string>
+    <string name="com_google_android_apps_googlevoice">Google Voice</string>
+    <string name="com_google_android_street">Street View для Карт Google</string>
+    <string name="com_google_android_voicesearch">Голосовой поиск</string>
+    <string name="com_google_android_youtube">YouTube</string>
+    <string name="com_google_android_marvin_kickback">Kickback</string>
+    <string name="com_google_android_marvin_soundback">Soundback</string>
+    <string name="com_google_android_marvin_talkback">Talkback</string>
+    <string name="com_facebook_katana">Facebook</string>
+    <string name="com_twitter_android">Twitter</string>
+        
+	<!-- Buttons -->
+	<string name="main_btn_ok">OK</string>
+	<string name="main_btn_selectall">Выбрать всё</string>
+	<string name="main_btn_cancel">Отмена</string>
+
+    <!-- Alert Dialog -->
+    <string name="alert_dialog_title">ВНИМАНИЕ: прочтите это!</string>
+    <string name="alert_dialog_message">Эта программа запускается только один раз и используется для поиска приложений в Android Market. Однако многим пользователям понадобиться отложить запуск этого приложения, например, для включения Wi-Fi. Если Вы хотите отложить её запуск, нажмите кнопку Отмена.</string>
+</resources>
