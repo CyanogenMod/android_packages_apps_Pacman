@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Установлення програм з Маркету</string>
+    <string name="activity_title">Вибір програм</string>
+
+    <string name="com_google_android_apps_maps">Карти Google</string>
+    <string name="com_google_android_street">Перегляд вулиць у картах Google</string>
+    <string name="com_google_android_voicesearch">Голосовий пошук</string>
+
+    <string name="main_btn_selectall">Вибрати всі</string>
+    <string name="main_btn_cancel">Скасувати</string>
+
+    <string name="alert_dialog_title">Увага: обов\u2019язково прочитайте!</string>
+    <string name="alert_dialog_message">Програма запускається лише один раз і використовується для пошуку програм у Маркеті. Однак, можливо багато користувачів побажають відкласти запуск програми з різних причин (наприклад з метою підключення до мережі Wi-Fi). Якщо Ви бажаєте запустити програму пізніше, після виконання необхідних заходів, натисніть кнопку \u201CСкасувати\u201D.</string>
+</resources>
