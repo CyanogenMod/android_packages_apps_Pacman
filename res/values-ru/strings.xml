@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Установка приложений из Android Market</string>
+	<string name="activity_title">Выберите приложения для установки</string>
+
+    <string name="com_google_android_apps_maps">Карты Google</string>
+    <string name="com_google_android_googlequicksearchbox">Поиск Google</string>
+    <string name="com_google_android_street">Street View для Карт Google</string>
+    <string name="com_google_android_voicesearch">Голосовой поиск</string>
+        
+	<!-- Buttons -->
+	<string name="main_btn_ok">OK</string>
+	<string name="main_btn_selectall">Выбрать всё</string>
+	<string name="main_btn_cancel">Отмена</string>
+
+    <!-- Alert Dialog -->
+    <string name="alert_dialog_title">ВНИМАНИЕ: прочитайте это!</string>
+    <string name="alert_dialog_message">Эта программа запускается только один раз и используется для поиска приложений в Android Market. Однако многим пользователям понадобится отложить запуск этой программы, например, для включения Wi-Fi. Если Вы хотите отложить её запуск, нажмите кнопку Отмена.</string>
+</resources>
