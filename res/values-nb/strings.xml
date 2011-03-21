@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Market Apps Installer</string>
+  <string name="activity_title">Velg programmer som skal installeres</string>
+
+  <!-- App Names -->
+  <string name="com_google_android_googlequicksearchbox">Google Søk</string>
+  <string name="com_google_android_street">Street View for Google Maps</string>
+  <string name="com_google_android_voicesearch">Voice Search</string>
+
+  <!-- Buttons -->
+  <string name="main_btn_selectall">Velg Alle</string>
+  <string name="main_btn_cancel">Avbryt</string>
+
+  <!-- Alert Dialog -->
+  <string name="alert_dialog_title">VIKTIG: Vennligst vent!</string>
+  <string name="alert_dialog_message">Dette programmet vil kun vises en gang og brukes til å søke for gitte applikasjoner på Market. Dette krever datatrafikk og skulle du foretrekke å kjøre dette programmet senere kan du etter å ha gjort nødvendige steg trykke AVBRYT nedenfor.</string>
+</resources>
