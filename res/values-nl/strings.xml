@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Market Apps Installer</string>
+	<string name="activity_title">Kies de apps die geïnstalleerd moeten worden</string>
+        
+	<!-- Buttons -->
+	<string name="main_btn_ok">OK</string>
+	<string name="main_btn_selectall">Alles selecteren</string>
+	<string name="main_btn_cancel">Annuleren</string>
+
+    <!-- Alert Dialog -->
+    <string name="alert_dialog_title">BELANGRIJK: Lees dit!</string>
+    <string name="alert_dialog_message">Dit programma verschijnt maar één keer en wordt gebruikt om apps in de Market te zoeken. Echter, veel gebruikers willen deze app later opnieuw starten (nadat bijvoorbeeld WIFI is ingeschakeld). Als je deze app later opnieuw wilt uitvoeren, klik dan op ANNULEREN.</string>
+</resources>
