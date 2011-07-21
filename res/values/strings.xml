@@ -9,8 +9,10 @@
         <item>com.google.android.apps.chrometophone</item>
         <item>com.google.android.apps.unveil</item>
         <item>com.google.android.apps.maps</item>
+        <item>com.google.android.apps.plus</item>
         <item>com.google.android.googlequicksearchbox</item>
         <item>com.google.android.apps.googlevoice</item>
+        <item>com.google.android.music</item>
         <item>com.google.android.marvin.kickback</item>
         <item>com.google.android.marvin.soundback</item>
         <item>com.google.android.marvin.talkback</item>
@@ -26,11 +28,13 @@
     <string name="com_google_android_apps_chrometophone">Google Chrome to Phone</string>
     <string name="com_google_android_apps_unveil">Google Goggles</string>
     <string name="com_google_android_apps_maps">Google Maps</string>
+    <string name="com_google_android_apps_plus">Google+</string>
     <string name="com_google_android_googlequicksearchbox">Google Search</string>
     <string name="com_google_android_apps_googlevoice">Google Voice</string>
     <string name="com_google_android_street">Street View on Google Maps</string>
     <string name="com_google_android_voicesearch">Voice Search</string>
     <string name="com_google_android_youtube">YouTube</string>
+    <string name="com_google_android_music">Google Music</string>
     <string name="com_google_android_marvin_kickback">Kickback</string>
     <string name="com_google_android_marvin_soundback">Soundback</string>
     <string name="com_google_android_marvin_talkback">Talkback</string>
