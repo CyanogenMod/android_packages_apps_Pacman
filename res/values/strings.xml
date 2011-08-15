@@ -18,13 +18,13 @@
         <item>com.google.android.street</item>
         <item>com.google.android.voicesearch</item>
         <item>com.google.android.youtube</item>
-		<item>com.google.android.apps.books</item>
+        <item>com.google.android.apps.books</item>
     </string-array>
 
 	<!-- Don't put these in an array. We find them by reflection. Relying on array order
 	     to be the same is unreliable as translations get out of sync. -->
     <string name="com_google_android_gm">Gmail</string>
-	<string name="com.google.android.apps.books">Google Books</string>
+    <string name="com.google.android.apps.books">Google Books</string>
     <string name="com_google_android_apps_chrometophone">Google Chrome to Phone</string>
     <string name="com_google_android_apps_unveil">Google Goggles</string>
     <string name="com_google_android_apps_maps">Google Maps</string>
