@@ -20,17 +20,33 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 
 public class StartupActivity extends Activity {
     private AlertDialog alertDialog;
+    private int versionNo = 0;
+    private Intent starterIntent = null;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        PackageInfo pInfo = null;
+        try{
+            pInfo = getApplicationContext().getPackageManager().getPackageInfo("com.android.vending",PackageManager.GET_META_DATA);
+        } catch (NameNotFoundException e) {
+            // Market package name changed
+            pInfo = null;
+        }
+        if(pInfo != null) {
+            versionNo = pInfo.versionCode;
+        }
 
+        Log.v("Pacman", "Market version is " + versionNo);
         // Set up the warning
         alertDialog = new AlertDialog.Builder(this).create();
         alertDialog.setTitle(R.string.alert_dialog_title);
@@ -38,7 +54,11 @@ public class StartupActivity extends Activity {
         alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, getString(android.R.string.ok), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 Log.v("Pacman", "Starting Pacman Download Activity");
-                Intent starterIntent = new Intent(getApplicationContext(), DownloadActivity.class);
+                if (versionNo < 8006027) {
+                    starterIntent = new Intent(getApplicationContext(), DownloadActivity.class);
+                } else {
+                    starterIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://search?q=pub:Google%20Inc.")); 
+                }
                 startActivityForResult(starterIntent, 0);
                 return;
             }
