@@ -25,7 +25,9 @@ public class PacmanReciever extends android.content.BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent changed_intent) {
         // TODO Auto-generated method stub
+
         Log.v("Pacman", "Starting Pacman");
+
         Intent intent = new Intent();
         intent.setClass(context, StartupActivity.class);
         intent.setAction(StartupActivity.class.getName()); 
