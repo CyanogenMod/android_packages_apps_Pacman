@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Instalátor aplikací Marketu</string>
+  <string name="activity_title">Zvolte aplikace k instalaci</string>
+  <string name="com_google_android_apps_chrometophone">Google Chrome do mobilu</string>
+  <string name="com_google_android_apps_maps">Mapy Google</string>
+  <string name="com_google_android_googlequicksearchbox">Vyhldávání Google</string>
+  <string name="com_google_android_street">Street View v mapách Google</string>
+  <string name="com_google_android_voicesearch">Hlasové vyhledávání</string>
+  <string name="main_btn_selectall">Vybrat vše</string>
+  <string name="main_btn_cancel">Zrušit</string>
+  <string name="alert_dialog_title">DŮLEŽITÉ: Čtěte následující!</string>
+  <string name="alert_dialog_message">Tato aplikace je zobrazena pouze jednou a slouží k vyhledání dalších aplikací na Marketu. Nicméně někteří uživatelé mohou chtít odložit spuštění této aplikace z různách důvodů (např. připojení k WiFi). Pokud chcete zobrazit tuto aplikaci později po jiných krocích, klikněte na tlačítko \"Zrušit\" níže.</string>
+</resources>
