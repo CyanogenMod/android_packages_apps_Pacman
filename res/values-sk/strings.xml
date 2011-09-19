@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Market Apps Installer</string>
+	<string name="activity_title">Choose the apps to install</string>
+
+    	<!-- Don't put these in an array. We find them by reflection. Relying on array order
+	     to be the same is unreliable as translations get out of sync. -->
+    <string name="com_google_android_gm">Gmail</string>
+    <string name="com_google_android_apps_chrometophone">Google Chrome do Telefónu</string>
+    <string name="com_google_android_apps_unveil">Google Goggles</string>
+    <string name="com_google_android_apps_maps">Google Mapy</string>
+    <string name="com_google_android_googlequicksearchbox">Google Hľadanie</string>
+    <string name="com_google_android_apps_googlevoice">Google Hlas</string>
+    <string name="com_google_android_street">Zobrazenie Ulíc v Google Mapách</string>
+    <string name="com_google_android_voicesearch">Hlasové Hľadanie</string>
+    <string name="com_google_android_youtube">YouTube</string>
+    <string name="com_google_android_marvin_kickback">Kickback</string>
+    <string name="com_google_android_marvin_soundback">Soundback</string>
+    <string name="com_google_android_marvin_talkback">Talkback</string>
+    <string name="com_facebook_katana">Facebook</string>
+    <string name="com_twitter_android">Twitter</string>
+	<string name="main_btn_ok">OK</string>
+	<string name="main_btn_selectall">Vybrať Všetko</string>
+	<string name="main_btn_cancel">Zrušiť</string>
+    <string name="alert_dialog_title">UPOZORNENIE: Prečítajte si toto!</string>
+    <string name="alert_dialog_message">Tento program sa zobrazí len raz a používa sa na vyhľadávanie aplikácií na Markete.  Avšak užívatelia si môžu priať odložiť spustenie tejto aplikácie z viacerých dôvodov (napr. pripojenie na Wi-Fi).  Ak si prajete spustiť tento program neskôr (po vykonaní príslušných krokov), stlačte ZRUŠIŤ.</string>
+</resources>
