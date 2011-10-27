@@ -54,14 +54,17 @@ public class StartupActivity extends Activity {
         alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, getString(android.R.string.ok), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 Log.v("Pacman", "Starting Pacman Download Activity");
-                if (versionNo < 8006027) {
-                    starterIntent = new Intent(getApplicationContext(), DownloadActivity.class);
+                if (versionNo != 0) {
+                    if (versionNo < 8006027) {
+                        starterIntent = new Intent(getApplicationContext(), DownloadActivity.class);
+                    } else {
+                        starterIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://search?q=pub:Google%20Inc."));
+                    }
+                    startActivityForResult(starterIntent, 0);
+                    return;
                 } else {
-                    starterIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://search?q=pub:Google%20Inc."));
+                    finish();
                 }
-                startActivityForResult(starterIntent, 0);
-                return;
-            }
         });
         alertDialog.setButton(DialogInterface.BUTTON_NEGATIVE, getString(android.R.string.cancel), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
