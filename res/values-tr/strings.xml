@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Market Uygulama Yükleyicisi</string>
+	<string name="activity_title">Kurulacak uygulamaları seçin</string>
+
+    <string name="com_google_android_gm">Gmail</string>
+    <string name="com_google_android_apps_chrometophone">Google Chrome\'dan Telefon\'a</string>
+    <string name="com_google_android_apps_unveil">Google Goggles</string>
+    <string name="com_google_android_apps_maps">Google Haritalar</string>
+    <string name="com_google_android_googlequicksearchbox">Google Arama</string>
+    <string name="com_google_android_apps_googlevoice">Google Ses</string>
+    <string name="com_google_android_street">Google Haritalar Sokak Görünümü</string>
+    <string name="com_google_android_voicesearch">Sesli Arama</string>
+    <string name="com_google_android_youtube">YouTube</string>
+    <string name="com_google_android_marvin_kickback">Kickback</string>
+    <string name="com_google_android_marvin_soundback">Soundback</string>
+    <string name="com_google_android_marvin_talkback">Talkback</string>
+    <string name="com_facebook_katana">Facebook</string>
+    <string name="com_twitter_android">Twitter</string>
+
+	<string name="main_btn_ok">Tamam</string>
+	<string name="main_btn_selectall">Tümünü Seç</string>
+	<string name="main_btn_cancel">İptal</string>
+
+    <string name="alert_dialog_title">ÖNEMLİ: Bunu okuyun!</string>
+    <string name="alert_dialog_message">Bu uygulama sadece bir kez çalışır ve Market\'te uygulamaları aramak için kullanılır. Ancak, bazı kulanıcılar çeşitli sebeplerden dolayı bu uygulamanın çalışmasını Wi-Fi\'ye bağlanasıya kadar erteleyebilir. Müsait bir zamanınızda bu programın daha sonra tekrar görünmesini istiyorsanız İPTAL tuşuna basın.</string>
+</resources>
