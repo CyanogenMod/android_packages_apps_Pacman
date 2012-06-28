@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">Market Apps Installer</string>
-	<string name="activity_title">Kies de apps die geïnstalleerd moeten worden</string>
-        
-	<!-- Buttons -->
-	<string name="main_btn_ok">OK</string>
-	<string name="main_btn_selectall">Alles selecteren</string>
-	<string name="main_btn_cancel">Annuleren</string>
+    <string name="app_name">Installatie-applicatie voor Play Store-applicaties</string>
+    <string name="activity_title">Te installeren applicaties kiezen</string>
+    <string name="main_btn_ok">OK</string>
+    <string name="main_btn_selectall">Alles selecteren</string>
+    <string name="main_btn_cancel">Annuleren</string>
+    <string name="alert_dialog_title">Let op</string>
+    <string name="alert_dialog_message">Deze applicatie verschijnt slechts één keer en wordt gebruikt om applicatiess in de Play Store te zoeken. Als u deze app later opnieuw wilt uitvoeren (nadat u bijv. Wi-Fi hebt ingeschakeld), druk dan op ANNULEREN.</string>
 
-    <!-- Alert Dialog -->
-    <string name="alert_dialog_title">BELANGRIJK: Lees dit!</string>
-    <string name="alert_dialog_message">Dit programma verschijnt maar één keer en wordt gebruikt om apps in de Market te zoeken. Echter, veel gebruikers willen deze app later opnieuw starten (nadat bijvoorbeeld WIFI is ingeschakeld). Als je deze app later opnieuw wilt uitvoeren, klik dan op ANNULEREN.</string>
+    <!-- Names of applications from Google that have been translated -->
+    <string name="com_google_android_googlequicksearchbox">Google Zoeken</string>
+    <string name="com_google_android_street">Street View bij Google Maps</string>
 </resources>
