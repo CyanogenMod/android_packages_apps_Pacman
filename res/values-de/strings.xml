@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">Market-Apps Installation</string>
-  <string name="activity_title">Apps zur Installation auswählen</string>
+    <string name="app_name">Play Store Apps Installation</string>
+    <string name="activity_title">Apps zur Installation auswählen</string>
 
-  <!-- App Names -->
-  <string name="com_google_android_googlequicksearchbox">Google Suche</string>
-  <string name="com_google_android_street">Street View für Google Maps</string>
-  <string name="com_google_android_voicesearch">Sprachsuche</string>
+    <!-- Buttons -->
+    <string name="main_btn_ok">OK</string>
+    <string name="main_btn_selectall">Alle auswählen</string>
+    <string name="main_btn_cancel">Abbrechen</string>
 
-  <!-- Buttons -->
-  <string name="main_btn_selectall">Alle auswählen</string>
-  <string name="main_btn_cancel">Abbrechen</string>
+    <!-- Alert Dialog -->
+    <string name="alert_dialog_title">WICHTIG: Bitte lesen!</string>
+    <string name="alert_dialog_message">Dieses Programm wird normalerweise nur einmal aufgerufen und dient dazu, bestimmte Programme im Android Market zu suchen. Es ist jedoch möglich das Programm zu einem späteren Zeitpunkt erneut aufzurufen (zB. nach WLAN-Verbindung). Wenn du es später ausführen möchtest drücke jetzt auf ABBRECHEN.</string>
 
-  <!-- Alert Dialog -->
-  <string name="alert_dialog_title">WICHTIG: Bitte lesen!</string>
-  <string name="alert_dialog_message">Dieses Programm wird normalerweise nur einmal aufgerufen und dient dazu, bestimmte Programme im Android Market zu suchen. Es ist jedoch möglich das Programm zu einem späteren Zeitpunkt erneut aufzurufen (zB. nach WLAN-Verbindung). Wenn du es später ausführen möchtest drücke jetzt auf ABBRECHEN.</string>
+    <!-- Names of applications from Google that have been translated -->
+    <string name="com_google_android_googlequicksearchbox">Google Suche</string>
+    <string name="com_google_android_street">Street View für Google Maps</string>
+    <string name="com_google_android_voicesearch">Sprachsuche</string>
 </resources>
