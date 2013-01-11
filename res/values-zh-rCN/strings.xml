@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Market 软件安装工具</string>
+    <string name="app_name">Play Store 软件安装工具</string>
     <string name="activity_title">选择要安装的应用程序</string>
 
-    <!-- skipping untranslatable /resources:0/string-array:name=app_packages -->
-
     <!-- Don't put these in an array. We find them by reflection. Relying on array order
-	     to be the same is unreliable as translations get out of sync. -->
+         to be the same is unreliable as translations get out of sync. -->
     <string name="com_google_android_gm">Gmail</string>
     <string name="com_google_android_apps_chrometophone">Google Chrome to Phone</string>
     <string name="com_google_android_apps_unveil">Google Goggles</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Instalador de Aplicativo do Market</string>
+    <string name="app_name">Instalador de Aplicativo do Play Store</string>
     <string name="activity_title">Selecione as aplicações para instalar</string>
 
     <!-- Don't put these in an array. We find them by reflection. Relying on array order
@@ -19,7 +19,7 @@
     <string name="com_google_android_marvin_talkback">Talkback</string>
     <string name="com_facebook_katana">Facebook</string>
     <string name="com_twitter_android">Twitter</string>
-        
+
     <!-- Buttons -->
     <string name="main_btn_ok">OK</string>
     <string name="main_btn_selectall">Selecionar tudo</string>

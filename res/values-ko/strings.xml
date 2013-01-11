@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">마켓 앱 설치 관리자</string>
-	<string name="activity_title">설치할 앱을 선택하세요.</string>
+    <string name="app_name">마켓 앱 설치 관리자</string>
+    <string name="activity_title">설치할 앱을 선택하세요.</string>
 
-	<!-- Don't put these in an array. We find them by reflection. Relying on array order
-	     to be the same is unreliable as translations get out of sync. -->
+    <!-- Don't put these in an array. We find them by reflection. Relying on array order
+         to be the same is unreliable as translations get out of sync. -->
     <string name="com_google_android_gm">Gmail</string>
     <string name="com_google_android_apps_chrometophone">Google Chrome to Phone</string>
     <string name="com_google_android_apps_unveil">Google Goggles</string>
@@ -20,8 +20,8 @@
     <string name="com_facebook_katana">Facebook</string>
     <string name="com_twitter_android">Twitter</string>
         
-	<!-- Buttons -->
-	<string name="main_btn_ok">확인</string>
-	<string name="main_btn_selectall">모두 선택</string>
-	<string name="main_btn_cancel">취소</string>
+    <!-- Buttons -->
+    <string name="main_btn_ok">확인</string>
+    <string name="main_btn_selectall">모두 선택</string>
+    <string name="main_btn_cancel">취소</string>
 </resources>
