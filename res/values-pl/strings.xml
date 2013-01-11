@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">Instalator Aplikacji</string>
-	<string name="activity_title">Wybierz aplikacje do zainstalowania</string>
+    <string name="app_name">Instalator Aplikacji</string>
+    <string name="activity_title">Wybierz aplikacje do zainstalowania</string>
 
+    <!-- Don't put these in an array. We find them by reflection. Relying on array order
+         to be the same is unreliable as translations get out of sync. -->
     <string name="com_google_android_gm">Gmail</string>
     <string name="com_google_android_apps_chrometophone">Google Chrome to Phone</string>
     <string name="com_google_android_apps_unveil">Google Goggles</string>
@@ -18,10 +20,10 @@
     <string name="com_facebook_katana">Facebook</string>
     <string name="com_twitter_android">Twitter</string>
         
-	<!-- Buttons -->
-	<string name="main_btn_ok">OK</string>
-	<string name="main_btn_selectall">Wybierz wszystko</string>
-	<string name="main_btn_cancel">Anuluj</string>
+    <!-- Buttons -->
+    <string name="main_btn_ok">OK</string>
+    <string name="main_btn_selectall">Wybierz wszystko</string>
+    <string name="main_btn_cancel">Anuluj</string>
 
     <!-- Alert Dialog -->
     <string name="alert_dialog_title">UWAGA!</string>

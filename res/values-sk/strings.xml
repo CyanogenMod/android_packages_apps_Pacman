@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">Inštalátor aplikácií Marketu</string>
-  <string name="activity_title">Vyberte aplikácie na inštaláciu</string>
-  <string name="com_google_android_apps_chrometophone">Google Chrome do mobilu</string>
-  <string name="com_google_android_apps_maps">Google Mapy</string>
-  <string name="com_google_android_googlequicksearchbox">Vyhľadávanie Google</string>
-  <string name="com_google_android_street">Street View v Google mapách</string>
-  <string name="com_google_android_voicesearch">Hlasové vyhľadávanie</string>
-  <string name="main_btn_selectall">Vybrať všetko</string>
-  <string name="main_btn_cancel">Zrušiť</string>
-  <string name="alert_dialog_title">Dôležité: Prečítajte si tento oznam!</string>
-  <string name="alert_dialog_message">Táto aplikácia je zobrazená iba raz a slúži na vyhľadanie ďalších aplikácií na Markete. Avšak niektorí používatelia môžu chcieť odložiť spustenie tejto aplikácie z rôznych dôvodov (napr. pripojenie k WiFi). Ak chcete zobraziť túto aplikáciu neskôr po iných krokoch, kliknite nižšie na tlačidlo \"Zrušiť\".</string>
+    <string name="app_name">Inštalátor aplikácií Play Store</string>
+    <string name="activity_title">Vyberte aplikácie na inštaláciu</string>
+
+    <!-- Don't put these in an array. We find them by reflection. Relying on array order
+         to be the same is unreliable as translations get out of sync. -->
+    <string name="com_google_android_gm">Gmail</string>
+    <string name="com_google_android_apps_chrometophone">Google Chrome do mobilu</string>
+    <string name="com_google_android_apps_unveil">Google Goggles</string>
+    <string name="com_google_android_apps_maps">Google Mapy</string>
+    <string name="com_google_android_googlequicksearchbox">Vyhľadávanie Google</string>
+    <string name="com_google_android_apps_googlevoice">Google Voice</string>
+    <string name="com_google_android_street">Street View v Google mapách</string>
+    <string name="com_google_android_voicesearch">Hlasové vyhľadávanie</string>
+    <string name="com_google_android_youtube">YouTube</string>
+    <string name="com_google_android_marvin_kickback">Kickback</string>
+    <string name="com_google_android_marvin_soundback">Soundback</string>
+    <string name="com_google_android_marvin_talkback">Talkback</string>
+    <string name="com_facebook_katana">Facebook</string>
+    <string name="com_twitter_android">Twitter</string>
+
+    <!-- Buttons -->
+    <string name="main_btn_ok">OK</string>
+    <string name="main_btn_selectall">Vybrať všetko</string>
+    <string name="main_btn_cancel">Zrušiť</string>
+
+    <!-- Alert Dialog -->
+    <string name="alert_dialog_title">Dôležité: Prečítajte si tento oznam!</string>
+    <string name="alert_dialog_message">Táto aplikácia je zobrazená iba raz a slúži na vyhľadanie ďalších aplikácií na Markete. Avšak niektorí používatelia môžu chcieť odložiť spustenie tejto aplikácie z rôznych dôvodov (napr. pripojenie k WiFi). Ak chcete zobraziť túto aplikáciu neskôr po iných krokoch, kliknite nižšie na tlačidlo \"Zrušiť\".</string>
 </resources>
