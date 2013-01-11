@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">Instalator Aplikacji</string>
-	<string name="activity_title">Wybierz aplikacje do zainstalowania</string>
+    <string name="app_name">Instalator Aplikacji Sklep Play</string>
+    <string name="activity_title">Wybierz aplikacje do zainstalowania</string>
 
-    <string name="com_google_android_gm">Gmail</string>
-    <string name="com_google_android_apps_chrometophone">Google Chrome to Phone</string>
-    <string name="com_google_android_apps_unveil">Google Goggles</string>
-    <string name="com_google_android_apps_maps">Mapy Google</string>
-    <string name="com_google_android_googlequicksearchbox">Google Search</string>
-    <string name="com_google_android_apps_googlevoice">Google Voice</string>
-    <string name="com_google_android_street">Street View w Mapach Google</string>
-    <string name="com_google_android_voicesearch">Wyszukiwanie głosowe</string>
-    <string name="com_google_android_youtube">YouTube</string>
-    <string name="com_google_android_marvin_kickback">Kickback</string>
-    <string name="com_google_android_marvin_soundback">Soundback</string>
-    <string name="com_google_android_marvin_talkback">Talkback</string>
-    <string name="com_facebook_katana">Facebook</string>
-    <string name="com_twitter_android">Twitter</string>
-        
-	<!-- Buttons -->
-	<string name="main_btn_ok">OK</string>
-	<string name="main_btn_selectall">Wybierz wszystko</string>
-	<string name="main_btn_cancel">Anuluj</string>
+    <!-- Buttons -->
+    <string name="main_btn_ok">OK</string>
+    <string name="main_btn_selectall">Wybierz wszystko</string>
+    <string name="main_btn_cancel">Anuluj</string>
 
     <!-- Alert Dialog -->
     <string name="alert_dialog_title">UWAGA!</string>
     <string name="alert_dialog_message">Ten program pojawi się tylko raz i służy do wyszukiwania aplikacji w Markecie.  Wiele osób pragnie jednak odłożyć tę czynność na później (np. by połączyć się z siecią Wi-Fi).  Jeśli chcesz by program pojawił się później, naciśnij przycisk Anuluj</string>
+
+    <!-- Names of applications from Google that have been translated -->
+    <string name="com_google_android_apps_maps">Mapy Google</string>
+    <string name="com_google_android_street">Street View w Mapach Google</string>
+    <string name="com_google_android_voicesearch">Wyszukiwanie głosowe</string>
 </resources>

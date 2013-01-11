@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Installateur applis du Market</string>
+    <string name="app_name">Installateur applis de Play Store</string>
     <string name="activity_title">Choisir les applis à installer</string>
-
-    <!-- Don't put these in an array. We find them by reflection. Relying on array order
-        to be the same is unreliable as translations get out of sync. -->
-    <string name="com_google_android_gm">Gmail</string>
-    <string name="com_google_android_apps_chrometophone">Google Chrome to Phone</string>
-    <string name="com_google_android_apps_unveil">Google Goggles</string>
-    <string name="com_google_android_apps_maps">Google Maps</string>
-    <string name="com_google_android_googlequicksearchbox">Recherche Google</string>
-    <string name="com_google_android_apps_googlevoice">Google Voice</string>
-    <string name="com_google_android_street">Street View dans Google Maps</string>
-    <string name="com_google_android_voicesearch">Recherche vocale</string>
-    <string name="com_google_android_youtube">YouTube</string>
-    <string name="com_google_android_marvin_kickback">Kickback</string>
-    <string name="com_google_android_marvin_soundback">Soundback</string>
-    <string name="com_google_android_marvin_talkback">Talkback</string>
-    <string name="com_facebook_katana">Facebook</string>
-    <string name="com_twitter_android">Twitter</string>
 
     <!-- Buttons -->
     <string name="main_btn_ok">OK</string>
@@ -28,4 +11,9 @@
     <!-- Alert Dialog -->
     <string name="alert_dialog_title">IMPORTANT: Veuillez lire !</string>
     <string name="alert_dialog_message">Ce programme n\'apparaîtra qu\'une seule fois. Il vous permet de chercher certaines applications système dans le Market. Cependant, beaucoup d\'utilisateurs souhaitent reporter cette opération pour diverses raisons (par ex. se connecter au Wi-Fi). Si vous voulez revoir ce programme plus tard, après avoir fait le nécessaire, cliquez sur ANNULER ci-dessous.</string>
+
+    <!-- Names of applications from Google that have been translated -->
+    <string name="com_google_android_googlequicksearchbox">Recherche Google</string>
+    <string name="com_google_android_street">Street View dans Google Maps</string>
+    <string name="com_google_android_voicesearch">Recherche vocale</string>
 </resources>

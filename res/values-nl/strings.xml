@@ -2,9 +2,13 @@
 <resources>
     <string name="app_name">Belangrijke Play Store-applicaties installeren</string>
     <string name="activity_title">Te installeren applicaties kiezen</string>
+
+    <!-- Buttons -->
     <string name="main_btn_ok">OK</string>
     <string name="main_btn_selectall">Alles selecteren</string>
     <string name="main_btn_cancel">Annuleren</string>
+
+    <!-- Alert Dialog -->
     <string name="alert_dialog_title">Let op</string>
     <string name="alert_dialog_message">Deze applicatie verschijnt slechts één keer en wordt gebruikt om applicatiess in de Play Store te zoeken. Als u deze applicatie later opnieuw wilt uitvoeren (nadat u bijv. Wi-Fi hebt ingeschakeld), druk dan op ANNULEREN.</string>
 
