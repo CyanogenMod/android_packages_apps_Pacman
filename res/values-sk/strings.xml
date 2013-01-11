@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">Inštalátor aplikácií Marketu</string>
-  <string name="activity_title">Vyberte aplikácie na inštaláciu</string>
-  <string name="com_google_android_apps_chrometophone">Google Chrome do mobilu</string>
-  <string name="com_google_android_apps_maps">Google Mapy</string>
-  <string name="com_google_android_googlequicksearchbox">Vyhľadávanie Google</string>
-  <string name="com_google_android_street">Street View v Google mapách</string>
-  <string name="com_google_android_voicesearch">Hlasové vyhľadávanie</string>
-  <string name="main_btn_selectall">Vybrať všetko</string>
-  <string name="main_btn_cancel">Zrušiť</string>
-  <string name="alert_dialog_title">Dôležité: Prečítajte si tento oznam!</string>
-  <string name="alert_dialog_message">Táto aplikácia je zobrazená iba raz a slúži na vyhľadanie ďalších aplikácií na Markete. Avšak niektorí používatelia môžu chcieť odložiť spustenie tejto aplikácie z rôznych dôvodov (napr. pripojenie k WiFi). Ak chcete zobraziť túto aplikáciu neskôr po iných krokoch, kliknite nižšie na tlačidlo \"Zrušiť\".</string>
+    <string name="app_name">Inštalátor aplikácií Play Store</string>
+    <string name="activity_title">Vyberte aplikácie na inštaláciu</string>
+
+    <!-- Buttons -->
+    <string name="main_btn_ok">OK</string>
+    <string name="main_btn_selectall">Vybrať všetko</string>
+    <string name="main_btn_cancel">Zrušiť</string>
+
+    <!-- Alert Dialog -->
+    <string name="alert_dialog_title">Dôležité: Prečítajte si tento oznam!</string>
+    <string name="alert_dialog_message">Táto aplikácia je zobrazená iba raz a slúži na vyhľadanie ďalších aplikácií na Markete. Avšak niektorí používatelia môžu chcieť odložiť spustenie tejto aplikácie z rôznych dôvodov (napr. pripojenie k WiFi). Ak chcete zobraziť túto aplikáciu neskôr po iných krokoch, kliknite nižšie na tlačidlo \"Zrušiť\".</string>
+
+    <!-- Names of applications from Google that have been translated -->
+    <string name="com_google_android_apps_chrometophone">Google Chrome do mobilu</string>
+    <string name="com_google_android_apps_maps">Google Mapy</string>
+    <string name="com_google_android_googlequicksearchbox">Vyhľadávanie Google</string>
+    <string name="com_google_android_street">Street View v Google mapách</string>
+    <string name="com_google_android_voicesearch">Hlasové vyhľadávanie</string>
 </resources>
