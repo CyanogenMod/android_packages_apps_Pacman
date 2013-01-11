@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Εγκατάσταση εφαρμογών Play Store</string>
+    <string name="activity_title">Επιλέξτε εφαρμογές για εγκατάσταση</string>
+
+    <!-- Buttons -->
+    <string name="main_btn_ok">OK</string>
+    <string name="main_btn_selectall">Επιλογή όλων</string>
+    <string name="main_btn_cancel">Ακύρωση</string>
+
+    <!-- Alert Dialog -->
+    <string name="alert_dialog_title">ΣΗΜΑΝΤΙΚΟ: Διαβάστε το!</string>
+    <string name="alert_dialog_message">Το πρόγραμμα αυτό εμφανίζεται μόνο μια φορά και χρησιμοποιείται για την αναζήτηση εφαρμογών στο Play Store. Ωστόσο, αρκετοί χρήστες θέλουν να αναβάλουν την εκτέλεση αυτής της εφαρμογής για διάφορους λόγους (π.χ. σύνδεση σε Wi-Fi). Εάν θέλετε να τρέξετε αυτό το πρόγραμμα αργότερα, αφού λάβετε τα κατάλληλα μέτρα, πατήστε Ακύρωση παρακάτω</string>
+</resources>
